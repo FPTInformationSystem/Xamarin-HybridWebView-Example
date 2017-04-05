@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{64A630D7-41BD-4969-9DCF-49AC06515331}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>HybridWebView.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)HybridWebViewEngine.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)www\" />
+    <Folder Include="$(MSBuildThisFileDirectory)www\scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)www\index.html" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)www\scripts.js" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)www\scripts\core.js" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)www\functionplan.html" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)www\fptislogo.jpg" />
+  </ItemGroup>
+</Project>
